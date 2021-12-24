@@ -3,7 +3,7 @@ package Algorithm;
 import java.util.*;
 
 public class PrimeNumber {
-
+	static ArrayList<Integer> arrayList = new ArrayList<Integer>();
 	public void findPrimeNumber() {
 		int s1, s2, flag = 0, i, j;
 		Scanner s = new Scanner(System.in);
@@ -24,7 +24,8 @@ public class PrimeNumber {
 				}
 			}
 			if (flag == 1) {
-				System.out.println(i);
+				arrayList.add(i);
+				System.out.println(arrayList);
 			}
 		}
 	}
