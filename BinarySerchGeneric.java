@@ -24,7 +24,7 @@ public class BinarySerchGeneric<T> {
 		
 		BinarySerchGeneric<Integer> n = new BinarySerchGeneric<>();
 	    //Integer
-	    Integer [] searchInteger = {0,2,4,6,8,100,12,14,16};
+	    Integer [] searchInteger = {2,4,6,8,100,12,14,16};
 	
 	        System.out.println("\nChecking Integer array...");
 			int results;
