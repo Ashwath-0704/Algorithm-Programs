@@ -1,9 +1,12 @@
 package Algorithm;
 
+import java.util.Arrays;
+
 public class BinarySerchGeneric<T> {
 	
 
-	public <T extends Comparable<T>>  int search(T[] list, int first, int last, T key) {
+	public <T extends Comparable<T>> int search(T[] list, int first, int last, T key) {
+		Arrays.sort(list); // sorting list element
 		int foundPosition;
 		int mid = first + (last - first) / 2;
 		if (first > last)
@@ -18,9 +21,10 @@ public class BinarySerchGeneric<T> {
 	}
 
 	public static void main(String args[]) {
+		
 		BinarySerchGeneric<Integer> n = new BinarySerchGeneric<>();
 	    //Integer
-	    Integer [] searchInteger = {0,2,4,6,8,10,12,14,16};
+	    Integer [] searchInteger = {0,2,4,6,8,100,12,14,16};
 	
 	        System.out.println("\nChecking Integer array...");
 			int results;
@@ -32,5 +36,19 @@ public class BinarySerchGeneric<T> {
 				else
 					System.out.println("\n"+searchInteger[key] + " is at index " + results);
 			}
+//			BinarySerchGeneric<String> n = new BinarySerchGeneric<>();
+//		    //Integer
+//			String [] searchInteger = {"atyua","zwerty","terty","uerty","ysdfgh","zrty"};
+//		
+//		        System.out.println("\nChecking Integer array...");
+//				int results;
+//				int lengthOfArray = searchInteger.length - 1;
+//				for (int key = 0; key < searchInteger.length; key++) {
+//					results = n.search(searchInteger, 0, lengthOfArray, searchInteger[key]);
+//					if (results > 0)
+//						System.out.println("\n"+searchInteger[key] + " is not in the array.");
+//					else
+//						System.out.println("\n"+searchInteger[key] + " is at index " + results);
+//				}
 	}
 }
