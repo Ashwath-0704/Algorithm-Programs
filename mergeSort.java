@@ -37,7 +37,7 @@ public class mergeSort<T> {
 	}
 
 	public static void main(String[] args) {
-		mergeSort<?> bg = new mergeSort();
+		mergeSort<?> bg = new mergeSort<>();
 
 		String[] first = { "hi", "mona", "how", "are", "you" };
 		String[] second = { "hello", "world", "good", "morning", "USA" };
@@ -45,7 +45,7 @@ public class mergeSort<T> {
 		for (int i = 0; i < merged.length; i++) {
 			System.out.print(merged[i] + " ");
 		}
-
+		mergeSort<int[]> mg = new mergeSort<>();
 		int[] firstInt = { 1, 4, 2, 6, 7 };
 		int[] secondInt = { 2, 8, 2, 9, 1, 12 };
 		int[] resultedMerge = mergeAndSortIntArrays(firstInt, secondInt);
