@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class UnorderedListNew {
+	/*
+	 * UnOrderedList fucntion
+	 */
 	static Scanner sc = new Scanner(System.in);
 	@SuppressWarnings("static-access")
 	public static void unOrderedList() throws IOException {

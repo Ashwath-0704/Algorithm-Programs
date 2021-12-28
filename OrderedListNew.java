@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 public class OrderedListNew {
 	static Scanner sc = new Scanner(System.in);
+	/*
+	 * OrderedList fucntion
+	 */
 	@SuppressWarnings("static-access")
 	public static void orderedList() throws IOException {
 		BinarySearcherNew bs = new BinarySearcherNew();
