@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Scanner;
-s
+
 public class OrderedListNew {
 	static Scanner sc = new Scanner(System.in);
 	@SuppressWarnings("static-access")
